@@ -1,2 +1,2 @@
 println "transactionId : " + transactionId
-println "payload : " + payload
+println "payload : " + input
