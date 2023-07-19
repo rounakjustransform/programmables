@@ -1,2 +1,2 @@
 println "Hello from Inbound file"
-pringln "Updated message from git"
+println "Updated message from git"
