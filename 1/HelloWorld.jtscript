@@ -1,1 +1,1 @@
-{"localContext":{"globalVariables":[],"functions":[],"lookupTables":[],"classes":[]},"testInput":"","modelVersion":1,"content":"println \"Hello World\"","importStatements":""}
+{"localContext":{"globalVariables":[],"functions":[],"lookupTables":[],"classes":[]},"testInput":"","modelVersion":1,"content":"println \"Hello World;\"","importStatements":""}
