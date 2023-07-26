@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessProcessJaxbPojo>
+    <resourceId>0</resourceId>
+    <modules>
+        <CustomFunctionModule>
+            <customFunctionScript>for (Map.Entry&lt;String, InputStream&gt; inputfile : inputFilesMap.entrySet()) {
+    FileInputStream fis = inputfile.getValue();
+
+    String UTF8 = "utf8";
+    int BUFFER_SIZE = 8192;
+
+    def s = ""
+    BufferedReader br = new BufferedReader(new InputStreamReader(fis, UTF8), BUFFER_SIZE);
+    def str = ""
+    while ((str = br.readLine()) != null) {
+        s &lt;&lt;= str
+    }
+
+    String input = s.toString()
+
+    String out = JTUtil.getMapperResult(transactionId, 6914631L, input)
+
+
+ 
+
+
+    InputStream is = new ByteArrayInputStream(out.getBytes("UTF-8"));
+    outputFilesMap.put("outputfile" + JTUtil.getRandom(9), is);
+} </customFunctionScript>
+        </CustomFunctionModule>
+        <STCModule>
+            <connectionId>1561</connectionId>
+        </STCModule>
+    </modules>
+</businessProcessJaxbPojo>
