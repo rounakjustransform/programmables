@@ -35,7 +35,7 @@ for (Map.Entry&lt;String, InputStream&gt; inputfile : inputFilesMap.entrySet()) 
 
     def out = new File(cTempFileOut).text
 
- 
+     println " Hello World "
 
 
     InputStream is = new ByteArrayInputStream(out.getBytes("UTF-8"));
